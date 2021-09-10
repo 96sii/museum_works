@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="new"action="/museums" method="post">
+
+  <div>
+    <label for="name">Name:</label>
+    <input class="input" type="text" id="name" name="name" placeholder="Musuem name" required autofocus />
+  </div>
+
+  <div>
+    <label for="address">Address:</label>
+    <input class="input" type="text" id="address" name="address" placeholder="Address" required />
+  </div>
+
+  <div class="button">
+    <button type="submit">✅</button>
+  </div>
+
+</form>
+
+{% endblock %}

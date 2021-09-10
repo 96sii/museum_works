@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{% for work in works %}
+<div class="work-container">
+  <div class="work-info">
+    <a href="/works/{{work.id}}">{{work.get_details()}}</a>
+  </div>
+    <form class="delete-form" action="/works/{{work.id}}/delete" method="POST">
+      <button class="trash-button"><i class="fa fa-trash-o fa-3x" style="color:red" aria-hidden="true"></i></button>
+    </form>
+</div>
+{% endfor %}
+
+{% endblock %}

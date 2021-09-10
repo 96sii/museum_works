@@ -1,0 +1,112 @@
+body{
+  font-family: "Helvetica", arial, sans-serif; font-size: 16px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  background-color: #292F33;
+
+}
+
+.menu > li {
+  list-style-type: none;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+a { 
+  font-family: arial,sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+.menu-item { 
+  color: white;
+}
+
+.container {
+display: block;
+text-align: center;
+margin: 0 2%;
+}
+
+
+.museum-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.delete-form {
+  height: 43.44px;
+  width: 43.44px;
+  display: flex;
+  justify-content: center;
+}
+
+.museum-info {
+  margin: 10px;
+  width: 300px;
+  padding-left: 5px;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.button {
+  text-align: center;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.work-info {
+  margin: 10px;
+  width: 900px;
+  padding-left: 5px;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.new{
+  padding: 2%;
+  text-align: center;
+}
+
+.new > div {
+  margin: 1%;
+}
+
+label { 
+display: inline-block;
+text-align: right;
+width: 115px;
+}
+
+select {
+  width: 153px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display:  block;
+    padding: 5px 0px;
+  }
+  .new {
+    text-align: left;
+  }
+}
